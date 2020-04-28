@@ -30,6 +30,7 @@ function drawGrid(size) {
 
 function setTheme(event) {
     theme = event.target.id;
+    document.querySelector('#theme').textContent = (theme == 'reset') ? 'BLACK' : theme.toUpperCase();
 }
 
 function changeColor(event) {
@@ -56,7 +57,7 @@ function changeCanvas(event) {
     $canvas.textContent = '';
     // Updating the input field (used it for the Reset option to work with the same function)
     $inputSize.value = size;
-    
+
     drawGrid(size);
 }
 
