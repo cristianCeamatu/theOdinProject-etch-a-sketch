@@ -55,7 +55,7 @@ function changeCanvas(event) {
     let size = event.target.value;
 
     // If the size is too big will make the browser crash
-    if (size < 2 || size >= 80) {
+    if (size < 2 || size > 80) {
         confirm('Please select a number betwenn 2 and 80');
         size = 16;
     }
