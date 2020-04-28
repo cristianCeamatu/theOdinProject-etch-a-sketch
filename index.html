@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Etch a sketch project</title>
+</head>
+<body>
+    <main class="showcase">
+        <header>
+            <ul class="sketch-options">
+                <li class="sketch-option"><button class="btn btn-primary" id="black">Black</button></li>
+                <li class="sketch-option"><button class="btn btn-primary" id="random">Random</button></li>
+                <li class="sketch-option"><button class="btn btn-primary" id="percent-increase">Percent increase</button></li>
+                <li class="sketch-option"><button class="btn btn-primary" id="reset" value="16">Reset</button></li>
+                <li class="sketch-option">Grid size <input type="number" name="size" id="size" value=16></li>
+            </ul>
+        </header>
+        <section id="canvas"></section>
+    </main>
+
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

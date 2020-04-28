@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.showcase {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     margin-top: 30px;
+}
+#canvas {
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(216, 215, 215, 0.884);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#canvas .grid-item {
+    border: 1px solid rgba(216, 215, 215, 0.884);
+}
+
+.showcase .sketch-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase .sketch-options .sketch-option {
+    margin-right: 10px;
+}
