@@ -28,27 +28,11 @@ ul {
 }
 .showcase {
     width: 90%;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-}
-.showcase .sketch-options #set-size {
-    padding: 5px;
-}
-.showcase #canvas {
-    width: 600px;
-    height: 600px;
-    border: 1px solid rgba(216, 215, 215, 0.884);
-    border-radius: 5px;
-    cursor: pointer;
-    background: #ffffff;
-}
-
-.showcase #canvas .grid-item {
-    border: 1px solid rgba(216, 215, 215, 0.884);
 }
 
 .showcase .sketch-options {
@@ -57,6 +41,7 @@ ul {
     align-items: center;
     background: rgba(255, 255, 255, 0.87);
     width: 600px;
+    margin: 0 auto;
 }
 
 .showcase .sketch-options .sketch-option:not(:last-child) {
@@ -64,8 +49,7 @@ ul {
 }
 
 .showcase .sketch-options #set-size {
-   padding-left: 10px;
-   padding-right: 10px;
+    padding: 5px;
 }
 
 .showcase .sketch-options #set-size input {
@@ -73,18 +57,31 @@ ul {
     padding-right: 5px;
 }
 
+.showcase #canvas {
+    width: 600px;
+    height: 600px;
+    border: 1px solid rgba(216, 215, 215, 0.13);
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.showcase #canvas div {
+    border: 1px solid rgba(216, 215, 215, 0.884);
+}
+
 @media(max-width: 760px) {
     .showcase #canvas {
-        width: 450px;
-        height: 450px;
+        width: 380px;
+        height: 380px;
     }
 
     .showcase .sketch-options {
-        width: 450px;
+        width: 380px;
         flex-wrap: wrap;
     }
 
-    .showcase .sketch-options .sketch-option:not(:last-child) {
+    .showcase .sketch-options .sketch-option {
         margin-bottom: 10px;
     }
 }
