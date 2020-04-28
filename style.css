@@ -6,36 +6,85 @@
     text-decoration: none;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+}
+
 ul {
     list-style: none;
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url('./doodle.jpg') no-repeat 20px 20px;
+    opacity: 0.1;
+    z-index: -1;
+}
 .showcase {
     width: 90%;
-    margin: 10px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     margin-top: 30px;
+    margin-top: 30px;
 }
-#canvas {
-    width: 500px;
-    height: 500px;
+.showcase .sketch-options #set-size {
+    padding: 5px;
+}
+.showcase #canvas {
+    width: 600px;
+    height: 600px;
     border: 1px solid rgba(216, 215, 215, 0.884);
     border-radius: 5px;
     cursor: pointer;
+    background: #ffffff;
 }
 
-#canvas .grid-item {
+.showcase #canvas .grid-item {
     border: 1px solid rgba(216, 215, 215, 0.884);
 }
 
 .showcase .sketch-options {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.87);
+    width: 600px;
 }
 
-.showcase .sketch-options .sketch-option {
+.showcase .sketch-options .sketch-option:not(:last-child) {
     margin-right: 10px;
+}
+
+.showcase .sketch-options #set-size {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.showcase .sketch-options #set-size input {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media(max-width: 760px) {
+    .showcase #canvas {
+        width: 450px;
+        height: 450px;
+    }
+
+    .showcase .sketch-options {
+        width: 450px;
+        flex-wrap: wrap;
+    }
+
+    .showcase .sketch-options .sketch-option:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
