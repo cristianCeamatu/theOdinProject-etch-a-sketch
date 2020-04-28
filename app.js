@@ -52,12 +52,18 @@ function changeColor(event) {
 function changeCanvas(event) {
     const $canvas = document.querySelector('#canvas');
     const $inputSize = document.querySelector('input#size');
-    const size = event.target.value;
+    let size = event.target.value;
+
+    // If the size is too big will make the browser crash
+    if (size < 2 || size >= 80) {
+        confirm('Please select a number betwenn 2 and 80');
+        size = 16;
+    }
+
     // Removing old cells
     $canvas.textContent = '';
     // Updating the input field (used it for the Reset option to work with the same function)
     $inputSize.value = size;
-
     drawGrid(size);
 }
 
