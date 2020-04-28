@@ -72,12 +72,12 @@ ul {
 
 @media(max-width: 760px) {
     .showcase #canvas {
-        width: 380px;
-        height: 380px;
+        width: 340px;
+        height: 340px;
     }
 
     .showcase .sketch-options {
-        width: 380px;
+        width: 340px;
         flex-wrap: wrap;
     }
 
