@@ -1,6 +1,6 @@
 # Etch A Skecth web app
 
-> The project is a simple Etch A Sketch web app build for [TheOdinProject](https://www.theodinproject.com/) modules.
+> The project is a simple Etch A Sketch web app build for [TheOdinProject](https://www.theodinproject.com/) modules. Enjoy a simple painting experience!
 
 ![screenshot](./app-screenshot-full.png)
 
